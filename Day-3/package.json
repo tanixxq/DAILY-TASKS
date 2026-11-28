@@ -1,0 +1,19 @@
+
+{
+  "name": "day-3",
+  "version": "1.0.0",
+  "description": "Smart Parking Service - MongoDB Schema Design",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+  "dev": "node --watch index.js",
+  "test": "node test.js"
+},
+  "keywords": ["mongodb", "mongoose", "smart-parking"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "mongoose": "^9.13.1"
+  }
+}
