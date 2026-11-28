@@ -1,0 +1,13 @@
+
+function errorHandler(err, req, res, next) {
+    const statusCode = err.statusCode || 500;
+
+    res.status(statusCode).json({
+        success: false,
+        requestId: req.requestId || null,
+        message: err.message || "Internal server error",
+        errors: err.details || []
+    });
+}
+
+module.exports = errorHandler;
